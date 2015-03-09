@@ -1,0 +1,33 @@
+﻿@model CodedHomes.Web.ViewModels.HomeViewModel
+
+@section styles
+{
+    <style>
+        #success-msg-container,
+        #fail-msg-container,
+        #delete-msg-container,
+        #img-fail-msg-container {
+            display: none;   
+        }
+    </style>
+}
+
+<div class="row">
+    <div class="col-sm-5 mobile-push-down">
+        <div class="row">
+            <div class="col-sm-10">
+                <img data-bind="attr:{src:model.imageUrl}" class="fancy"/>
+            </div>
+            <button id="upload-button" data-bind="click: showImageUpload" class="btn btn-xs push-down">
+                <i class="glyphicon glyphicon-upload"></i>Upload Image
+            </button>
+            <div id="upload-form-container" class="none alert alert-success push-down">
+                <form id="upload-form" action="/homes/uploadimage" method="POST" enctype="multipart/form-data">
+                    <button class="btn btn-xs pull-right" data-bind="click: hideImageUpload">x</button>
+                    <input id="image-upload" type="file" name="image"/>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="image-fail-msg-container" class="alert alert-danger alert-block push-down"></div>
+</div>

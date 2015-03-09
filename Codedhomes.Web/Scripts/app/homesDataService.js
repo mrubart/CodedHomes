@@ -5,7 +5,7 @@
 	DEL: 'DELETE'
 };
 
-var homeDataService = (function()
+var homesDataService = (function()
 {
 	var ds = {
 		commit: function(type, url, data) {
@@ -40,5 +40,5 @@ var homeDataService = (function()
 	return {
 		save: ds.save,
 		del: ds.del
-	}
+	};
 })();

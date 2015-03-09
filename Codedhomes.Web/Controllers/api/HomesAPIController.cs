@@ -95,7 +95,6 @@ namespace CodedHomes.Web.Controllers
 			catch (Exception ex)
 			{
 					
-				throw;
 				return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex);
 			}
 		}

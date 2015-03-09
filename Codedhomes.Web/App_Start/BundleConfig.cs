@@ -15,7 +15,9 @@ namespace CodedHomes.Web
 				, "~/Scripts/lib/knockout-{version}.js"
 				, "~/Scripts/lib/underscore.js"
 				, "~/Scripts/lib/h5f.js"
+				, "~/Scripts/app/_mixins.js"
 				, "~/Scripts/app/homesDataService.js"
+				, "~/Scripts/app/validationUtility.js"
 				));
 
 			bundles.Add(new ScriptBundle("~/bundles/jquery").Include(

@@ -1,4 +1,4 @@
-﻿@model Codedhomes.Web.Models.LoginModel
+﻿@model CodedHomes.Web.Models.LoginModel
 
 @{
     ViewBag.Title = "Log in";
@@ -13,7 +13,7 @@
         @Html.AntiForgeryToken()
         @Html.ValidationSummary(true)
 
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-sm-2">@Html.LabelFor(m => m.UserName)</div>
                 <div class="col-sm-8">
