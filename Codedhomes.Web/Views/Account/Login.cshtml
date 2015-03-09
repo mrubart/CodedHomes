@@ -1,0 +1,49 @@
+﻿@model Codedhomes.Web.Models.LoginModel
+
+@{
+    ViewBag.Title = "Log in";
+}
+
+<h2>Login</h2>
+<p class="lead well well-small">@Html.ActionLink("Register", "Register") if you don't have an account.</p>
+<section id="loginForm">
+
+    @using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2">@Html.LabelFor(m => m.UserName)</div>
+                <div class="col-sm-8">
+                    @Html.TextBoxFor(m => m.UserName)
+                    @Html.ValidationMessageFor(m => m.UserName)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">@Html.LabelFor(m => m.Password)</div>
+                <div class="col-sm-8">
+                    @Html.PasswordFor(m => m.Password)
+                    @Html.ValidationMessageFor(m => m.Password)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-10">
+                    @Html.CheckBoxFor(m => m.RememberMe)
+                    @Html.LabelFor(m => m.RememberMe, new { @class = "checkbox" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <input class="btn btn-lg" type="submit" value="Log in" />
+                </div>
+            </div>
+        </div>
+    }
+</section>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
