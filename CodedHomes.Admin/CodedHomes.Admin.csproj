@@ -415,6 +415,7 @@
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
     <Content Include="packages.config" />
+    <Content Include="ConnectionString.config" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
