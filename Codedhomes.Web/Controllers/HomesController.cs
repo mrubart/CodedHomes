@@ -71,7 +71,7 @@ namespace CodedHomes.Web.Controllers
 
 			path = Path.Combine(HttpContext.Server.MapPath(Config.ImagesFolderPath), fileName);
 
-			if (ext == ".png" || ext == "jpg")
+			if (ext == ".png" || ext == ".jpg")
 			{
 				home = _unit.Homes.GetById(id);
 				if (home != null)

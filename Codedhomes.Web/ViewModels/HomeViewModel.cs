@@ -2,7 +2,7 @@
 
 namespace CodedHomes.Web.ViewModels
 {
-	public class HomeViewModel
+	public class HomeViewModel : ViewModelBase
 	{
 		public Home Home { get; set; }
 		public bool	IsNew { get; set; }
