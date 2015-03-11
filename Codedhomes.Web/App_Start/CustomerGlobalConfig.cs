@@ -19,6 +19,7 @@ namespace CodedHomes.Web
 			json.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
 
 			config.Filters.Add(new ValidationActionFilter());
+
 		}
 	}
 }
