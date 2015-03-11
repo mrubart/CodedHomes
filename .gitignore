@@ -6,7 +6,7 @@
 *.user
 *.sln.docstates
 
-ConnectionString.config
+*ConnectionString.config
 
 # Build results
 [Dd]ebug/
