@@ -289,7 +289,9 @@
     <Content Include="img\homes\no-image-large.png" />
     <Content Include="img\homes\no-image.png" />
     <Content Include="img\property.jpg" />
+    <Content Include="o.html" />
     <Content Include="Scripts\app\homesDataService.js" />
+    <Content Include="Scripts\app\offlineUtility.js" />
     <Content Include="Scripts\app\validationUtility.js" />
     <Content Include="Scripts\app\_mixins.js" />
     <Content Include="Scripts\lib\bootstrap.js" />
@@ -314,6 +316,7 @@
     <Content Include="Scripts\lib\npm.js" />
     <Content Include="Scripts\lib\underscore.js" />
     <Content Include="Scripts\lib\underscore.min.js" />
+    <Content Include="Views\Home\offline.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
