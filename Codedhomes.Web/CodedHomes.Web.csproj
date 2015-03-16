@@ -275,6 +275,7 @@
     <Content Include="ConnectionString.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="ConnString.config" />
     <None Include="Scripts\lib\jquery-1.9.1.intellisense.js" />
     <Content Include="img\coded-homes-logo-large.png" />
     <Content Include="img\coded-homes-logo.png" />
